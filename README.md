@@ -25,7 +25,7 @@
 	
 	git clone https://github.com/dariyush/PyodbcListOfDicts.git
 	cd PyodbcListOfDicts
-	python setup.py .
+	pip install .
 
 	
 **Examples:**
