@@ -1,0 +1,9 @@
+README.md
+setup.py
+PyodbcListOfDicts/PyodbcListOfDicts.py
+PyodbcListOfDicts/__init__.py
+PyodbcListOfDicts.egg-info/PKG-INFO
+PyodbcListOfDicts.egg-info/SOURCES.txt
+PyodbcListOfDicts.egg-info/dependency_links.txt
+PyodbcListOfDicts.egg-info/requires.txt
+PyodbcListOfDicts.egg-info/top_level.txt

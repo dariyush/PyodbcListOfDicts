@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: PyodbcListOfDicts
+Version: 2019.3.15
+Summary: Returns a List Of Dicts if quering DataBase using PyODBC
+Home-page: https://www.mysite.com
+Author: Aliakbar Mohammadi
+Author-email: mohammadi.aliakbar@gmail.com
+License: UNKNOWN
+Description: **Pyodbc List Of Dicts**
+        		from PyodbcListOfDicts import SQLExec
+        		lst_of_dicts = SQLExec(query, server, dataBase, commit)
+        		
+        		Parameters:
+        			query (string): 
+        				SQL query
+        			server (string): 
+        				server name or address
+        			dataBase (string): 
+        				database name
+        			commit (bplean): 
+        				1 if you like a connection.commit()
+        				0 if you dont like a connection.commit()
+        	
+        **Examples:**
+        
+            from PyodbcListOfDicts import SQLExec
+        
+        	server, dataBase, commit = 'AMESYD03','SafeEc', 0 
+            query = """SELECT TOP 10 * FROM [dbo].[Company]"""  
+            lst_of_dicts = SQLExec(query, server, dataBase, commit)
+            
+            from pandas import DataFrame
+            df = DataFrame( lst_of_dicts )
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
