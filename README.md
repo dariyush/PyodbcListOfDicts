@@ -1,4 +1,5 @@
 **Pyodbc List Of Dicts**
+
 		from PyodbcListOfDicts import SQLExec
 		lst_of_dicts = SQLExec(query, server, dataBase, commit)
 		
