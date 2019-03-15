@@ -26,7 +26,6 @@ def SQLExec(query, server, dataBase, commit):
     
     return [{k[0]: v for k, v in zip( description, row )} for row in rows]            
 
-
 #%%
 if __name__ == "__main__":
     server, dataBase, commit = 'AMESYD03','SafeEc', 0 

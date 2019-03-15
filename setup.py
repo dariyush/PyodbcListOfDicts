@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name = "PyodbcListOfDicts",
-    version = "2019.03.15",
-    author = "Aliakbar Mohammadi",
-    author_email = "mohammadi.aliakbar@gmail.com",
+    version = "2019.03.17",
+    author = "Dariyush",
+    author_email = "dariyush@gmail.com",
     description = "Returns a List Of Dicts if quering DataBase using PyODBC",
     long_description = long_description,
     long_description_content_type = "text/markdown",
-    url="https://www.mysite.com",
+    url="https://github.com/dariyush/PyodbcListOfDicts",
     packages = setuptools.find_packages(),
     install_requires = ['pyodbc'],
     classifiers=[
