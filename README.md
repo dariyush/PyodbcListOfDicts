@@ -1,4 +1,5 @@
 **Pyodbc List Of Dicts**
+
 	A wraper around PYODBC that returns a list of dictionary in reponce of any query.
 
 	from PyodbcListOfDicts import SQLExec
@@ -16,9 +17,15 @@
 			0 if you dont like a connection.commit()
 
 			
-**Installation**
+**Installation:**
 
 	pip install -i https://test.pypi.org/simple/ PyodbcListOfDicts
+	
+	or
+	
+	git clone https://github.com/dariyush/PyodbcListOfDicts.git
+	cd PyodbcListOfDicts
+	python setup.py .
 
 	
 **Examples:**
