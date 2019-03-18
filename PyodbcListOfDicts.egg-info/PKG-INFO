@@ -1,12 +1,13 @@
 Metadata-Version: 2.1
 Name: PyodbcListOfDicts
-Version: 2019.3.17
+Version: 2019.3.18
 Summary: Returns a List Of Dicts if quering DataBase using PyODBC
 Home-page: https://github.com/dariyush/PyodbcListOfDicts
 Author: Dariyush
 Author-email: dariyush@gmail.com
 License: UNKNOWN
 Description: **Pyodbc List Of Dicts**
+        
         	A wraper around PYODBC that returns a list of dictionary in reponce of any query.
         
         	from PyodbcListOfDicts import SQLExec
@@ -23,8 +24,17 @@ Description: **Pyodbc List Of Dicts**
         			1 if you like a connection.commit()
         			0 if you dont like a connection.commit()
         
-        **Installation**
+        			
+        **Installation:**
+        
         	pip install -i https://test.pypi.org/simple/ PyodbcListOfDicts
+        	
+        	or
+        	
+        	git clone https://github.com/dariyush/PyodbcListOfDicts.git
+        	cd PyodbcListOfDicts
+        	pip install .
+        
         	
         **Examples:**
         
@@ -36,10 +46,13 @@ Description: **Pyodbc List Of Dicts**
             
             from pandas import DataFrame
             df = DataFrame( lst_of_dicts )
+        
         	
         **Contacts:**
-        Email: dariyush@gmail.com
-        git: https://github.com/dariyush/PyodbcListOfDicts
+        
+        	Email: dariyush@gmail.com
+        	git: https://github.com/dariyush/PyodbcListOfDicts
+        	PyPi: https://test.pypi.org/project/PyodbcListOfDicts/
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3.6
 Classifier: License :: OSI Approved :: MIT License

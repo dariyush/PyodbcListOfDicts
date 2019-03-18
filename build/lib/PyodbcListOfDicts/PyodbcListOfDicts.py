@@ -6,6 +6,7 @@ Created on Fri Mar 15 14:52:34 2019
 """
 
 import pyodbc
+from collections import OrderedDict
 
 #%%
 def GetConnection(server, database):
@@ -24,7 +25,15 @@ def SQLExec(query, server, dataBase, commit):
             if commit:
                 connection.commit()
     
-    return [{k[0]: v for k, v in zip( description, row )} for row in rows]            
+    lst = []
+    for row in rows:
+        d = OrderedDict()
+        for k, v in zip( description, row ):
+            d[k[0]] = v
+        lst.append( d )
+    
+    return lst
+    # return [{k[0]: v for k, v in zip( description, row )} for row in rows]            
 
 #%%
 if __name__ == "__main__":
