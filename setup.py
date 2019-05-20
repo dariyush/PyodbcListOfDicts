@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name = "PyodbcListOfDicts",
-    version = "2019.03.18",
+    version = "2019.04.09",
     author = "Dariyush",
     author_email = "dariyush@gmail.com",
     description = "Returns a List Of Dicts if quering DataBase using PyODBC",

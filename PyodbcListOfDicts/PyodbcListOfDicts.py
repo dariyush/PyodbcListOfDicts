@@ -20,7 +20,10 @@ def SQLExec(query, server, dataBase, commit):
     with GetConnection(server,dataBase) as connection:
         with connection.cursor() as cursor:
             cursor.execute(query)
-            rows = cursor.fetchall()
+            try:
+                rows = cursor.fetchall()
+            except:
+                rows = []
             description = cursor.description #[col[0] for col in cursor.description]
             if commit:
                 connection.commit()
