@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: PyodbcListOfDicts
-Version: 2019.3.18
+Version: 2019.4.9
 Summary: Returns a List Of Dicts if quering DataBase using PyODBC
 Home-page: https://github.com/dariyush/PyodbcListOfDicts
 Author: Dariyush
